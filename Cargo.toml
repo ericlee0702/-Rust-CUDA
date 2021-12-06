@@ -1,0 +1,14 @@
+[workspace]
+members = [
+  "crates/*",
+
+  "xtask",
+
+  "examples/optix/*",
+  "examples/cuda/cpu/*",
+  "examples/cuda/gpu/*",
+
+]
+
+[profile.dev.package.rustc_codegen_nvvm]
+opt-level = 3
